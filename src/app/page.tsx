@@ -18,7 +18,7 @@ export default function Home() {
         />
 
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1a3c3f]/95 via-[#1a3c3f]/80 to-[#2c5a5e]/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#2c5a5e]/75 via-[#3a7378]/55 to-[#4a9ba3]/30" />
 
         {/* Content */}
         <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-32 lg:px-8">
