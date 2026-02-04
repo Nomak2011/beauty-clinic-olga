@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "@/components/sections/Header";
 import ScrollReveal from "@/components/ScrollReveal";
+import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 
 export default function Home() {
   return (
@@ -237,6 +238,54 @@ export default function Home() {
               </ScrollReveal>
             </div>
           </div>
+        </div>
+      </section>
+      {/* ===== Vorher / Nachher ===== */}
+      <section id="results" className="bg-white py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <ScrollReveal>
+            <div className="text-center">
+              <span className="text-sm font-medium tracking-wide text-teal">Ergebnisse</span>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+                {"Vorher & Nachher"}
+              </h2>
+              <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-600">
+                {"Überzeugen Sie sich selbst von den Ergebnissen unserer Behandlungen. Bewegen Sie den Schieberegler, um den Unterschied zu sehen."}
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <ScrollReveal delay={100}>
+              <BeforeAfterSlider
+                beforeSrc="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=600&h=800&fit=crop&crop=face"
+                afterSrc="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=800&fit=crop&crop=face"
+                label="Hautverjüngung"
+              />
+            </ScrollReveal>
+
+            <ScrollReveal delay={250}>
+              <BeforeAfterSlider
+                beforeSrc="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&h=800&fit=crop&crop=face"
+                afterSrc="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=600&h=800&fit=crop&crop=face"
+                label="Faltenbehandlung"
+              />
+            </ScrollReveal>
+
+            <ScrollReveal delay={400} className="sm:col-span-2 lg:col-span-1">
+              <BeforeAfterSlider
+                beforeSrc="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop&crop=face"
+                afterSrc="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&h=800&fit=crop&crop=face"
+                label="Konturierung & Lifting"
+              />
+            </ScrollReveal>
+          </div>
+
+          <ScrollReveal delay={200}>
+            <p className="mt-12 text-center text-sm text-gray-400">
+              {"* Platzhalterbilder. Echte Behandlungsergebnisse werden in Kürze hinzugefügt."}
+            </p>
+          </ScrollReveal>
         </div>
       </section>
     </div>
