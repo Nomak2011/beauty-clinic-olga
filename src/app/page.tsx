@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Header from "@/components/sections/Header";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Home() {
   return (
@@ -81,96 +82,159 @@ export default function Home() {
       {/* ===== Leistungen ===== */}
       <section id="services" className="bg-gray-50 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="max-w-2xl">
-            <span className="text-sm font-medium tracking-wide text-teal">Unser Angebot</span>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Unsere Leistungen</h2>
-            <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-600">
-              {`Ein ganzheitlicher Ansatz f\u00fcr die Sch\u00f6nheit und Gesundheit Ihrer Haut mit modernsten Methoden und zertifizierten Pr\u00e4paraten.`}
-            </p>
-          </div>
+          <ScrollReveal>
+            <div className="max-w-2xl">
+              <span className="text-sm font-medium tracking-wide text-teal">Unser Angebot</span>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Unsere Leistungen</h2>
+              <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-600">
+                {"Ein ganzheitlicher Ansatz für die Schönheit und Gesundheit Ihrer Haut mit modernsten Methoden und zertifizierten Präparaten."}
+              </p>
+            </div>
+          </ScrollReveal>
 
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {/* Карточка 1 */}
-            <div className="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white p-8 transition-all duration-300 hover:shadow-xl hover:shadow-teal/5">
-              <div className="absolute -top-6 -right-6 size-24 rounded-full bg-teal-light opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-
-              <div className="relative">
-                <div className="flex size-12 items-center justify-center rounded-xl bg-teal-light text-teal">
-                  <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="m9 12.75 1.5 1.5 4.5-4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" />
-                  </svg>
+            <ScrollReveal delay={100}>
+              <div className="group relative h-full overflow-hidden rounded-2xl border border-gray-100 bg-white p-8 transition-all duration-300 hover:shadow-xl hover:shadow-teal/5">
+                <div className="absolute -top-6 -right-6 size-24 rounded-full bg-teal-light opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <div className="relative">
+                  <div className="flex size-12 items-center justify-center rounded-xl bg-teal-light text-teal">
+                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="m9 12.75 1.5 1.5 4.5-4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" />
+                    </svg>
+                  </div>
+                  <h3 className="mt-6 text-lg font-semibold text-foreground">Injektionskosmetik</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-gray-600">
+                    {"Botulinumtherapie, Konturierung, Biorevitalisierung und Mesotherapie. Sichere Premium-Präparate für natürliche Ergebnisse."}
+                  </p>
+                  <a href="#contact" className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-teal transition-colors hover:text-teal-dark">
+                    Mehr erfahren
+                    <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                  </a>
                 </div>
+              </div>
+            </ScrollReveal>
 
-                <h3 className="mt-6 text-lg font-semibold text-foreground">Injektionskosmetik</h3>
-                <p className="mt-3 text-sm leading-relaxed text-gray-600">
-                  Botulinumtherapie, Konturierung, Biorevitalisierung und Mesotherapie.
-                  {`Sichere Premium-Pr\u00e4parate f\u00fcr nat\u00fcrliche Ergebnisse.`}
+            <ScrollReveal delay={250}>
+              <div className="group relative h-full overflow-hidden rounded-2xl border border-gray-100 bg-white p-8 transition-all duration-300 hover:shadow-xl hover:shadow-teal/5">
+                <div className="absolute -top-6 -right-6 size-24 rounded-full bg-teal-light opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <div className="relative">
+                  <div className="flex size-12 items-center justify-center rounded-xl bg-teal-light text-teal">
+                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714a2.25 2.25 0 0 0 .659 1.591L19 14.5M14.25 3.104c.251.023.501.05.75.082M19 14.5l-1.47 4.43a2.25 2.25 0 0 1-2.133 1.57H8.603a2.25 2.25 0 0 1-2.134-1.57L5 14.5m14 0H5" />
+                    </svg>
+                  </div>
+                  <h3 className="mt-6 text-lg font-semibold text-foreground">Apparative Verfahren</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-gray-600">
+                    {"Laserverjüngung, RF-Lifting, Mikrostromtherapie. Modernste Geräte für schmerzfreie und wirksame Behandlungen."}
+                  </p>
+                  <a href="#contact" className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-teal transition-colors hover:text-teal-dark">
+                    Mehr erfahren
+                    <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={400} className="sm:col-span-2 lg:col-span-1">
+              <div className="group relative h-full overflow-hidden rounded-2xl border border-gray-100 bg-white p-8 transition-all duration-300 hover:shadow-xl hover:shadow-teal/5">
+                <div className="absolute -top-6 -right-6 size-24 rounded-full bg-teal-light opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <div className="relative">
+                  <div className="flex size-12 items-center justify-center rounded-xl bg-teal-light text-teal">
+                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09zm8.446-7.654L18 9.75l-.259-1.5a3.375 3.375 0 0 0-2.491-2.491L13.75 5.5l1.5-.259a3.375 3.375 0 0 0 2.491-2.491L18 1.25l.259 1.5a3.375 3.375 0 0 0 2.491 2.491l1.5.259-1.5.259a3.375 3.375 0 0 0-2.491 2.491z" />
+                    </svg>
+                  </div>
+                  <h3 className="mt-6 text-lg font-semibold text-foreground">{"Ästhetische Pflege"}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-gray-600">
+                    {"Chemische Peelings, Pflegeprogramme, Reinigung und Feuchtigkeitspflege. Individuelle Auswahl der Behandlungen für Ihren Hauttyp."}
+                  </p>
+                  <a href="#contact" className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-teal transition-colors hover:text-teal-dark">
+                    Mehr erfahren
+                    <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== Über uns ===== */}
+      <section id="about" className="relative overflow-hidden bg-[#1e4d50] py-24 sm:py-32">
+        <div className="pointer-events-none absolute -top-40 -right-40 size-[500px] rounded-full bg-teal/20 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-40 -left-40 size-[400px] rounded-full bg-teal-light/10 blur-3xl" />
+
+        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="flex flex-col items-center gap-16 lg:flex-row lg:gap-20">
+            {/* Фото */}
+            <ScrollReveal className="w-full flex-shrink-0 lg:w-[45%]">
+              <div className="relative">
+                <div className="absolute -top-4 -left-4 h-full w-full rounded-2xl border-2 border-teal-light/20" />
+                <Image
+                  src="https://images.unsplash.com/photo-1559599101-f09722fb4948?w=700&h=850&fit=crop&crop=top"
+                  alt="Olga Baher — Fachkosmetikerin"
+                  width={700}
+                  height={850}
+                  className="relative z-10 w-full rounded-2xl object-cover shadow-2xl"
+                />
+              </div>
+            </ScrollReveal>
+
+            {/* Текст */}
+            <div className="flex-1">
+              <ScrollReveal>
+                <span className="text-sm font-medium tracking-wide text-teal-light/80">Ihre Expertin</span>
+                <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                  Olga Baher
+                </h2>
+                <p className="mt-2 text-lg font-medium text-teal-light">
+                  {"Fachkosmetikerin für ästhetische Verfahren"}
                 </p>
+              </ScrollReveal>
+
+              <ScrollReveal delay={200}>
+                <p className="mt-6 text-base leading-relaxed text-white/75">
+                  {"Mit über 12 Jahren Erfahrung in der ästhetischen Kosmetologie biete ich Ihnen individuelle Behandlungen auf höchstem Niveau. Mein Ziel ist es, Ihre natürliche Schönheit zu betonen und Ihr Wohlbefinden zu steigern — ohne sichtbare Eingriffe."}
+                </p>
+                <p className="mt-4 text-base leading-relaxed text-white/75">
+                  {"Jede Behandlung beginnt mit einer ausführlichen Beratung. Gemeinsam finden wir die optimale Lösung für Ihre individuellen Bedürfnisse."}
+                </p>
+              </ScrollReveal>
+
+              <ScrollReveal delay={400}>
+                <div className="mt-8 space-y-4">
+                  {[
+                    "Zertifizierte Fachkosmetikerin",
+                    "Spezialisierung auf Injektionskosmetik",
+                    "Fortbildungen in apparativen Verfahren",
+                    "Regelmäßige Schulungen & Zertifizierungen",
+                  ].map((item) => (
+                    <div key={item} className="flex items-center gap-3">
+                      <div className="flex size-6 flex-shrink-0 items-center justify-center rounded-full bg-teal-light/20">
+                        <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} className="text-teal-light">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg>
+                      </div>
+                      <span className="text-sm text-white/80">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </ScrollReveal>
+
+              <ScrollReveal delay={600}>
                 <a
                   href="#contact"
-                  className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-teal transition-colors hover:text-teal-dark"
+                  className="mt-10 inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-teal-dark shadow-lg transition-all duration-300 hover:bg-teal-light hover:shadow-xl"
                 >
-                  Mehr erfahren
-                  <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                  </svg>
+                  {"Beratungsgespräch vereinbaren"}
                 </a>
-              </div>
-            </div>
-
-            {/* Карточка 2 */}
-            <div className="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white p-8 transition-all duration-300 hover:shadow-xl hover:shadow-teal/5">
-              <div className="absolute -top-6 -right-6 size-24 rounded-full bg-teal-light opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-
-              <div className="relative">
-                <div className="flex size-12 items-center justify-center rounded-xl bg-teal-light text-teal">
-                  <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714a2.25 2.25 0 0 0 .659 1.591L19 14.5M14.25 3.104c.251.023.501.05.75.082M19 14.5l-1.47 4.43a2.25 2.25 0 0 1-2.133 1.57H8.603a2.25 2.25 0 0 1-2.134-1.57L5 14.5m14 0H5" />
-                  </svg>
-                </div>
-
-                <h3 className="mt-6 text-lg font-semibold text-foreground">Apparative Verfahren</h3>
-                <p className="mt-3 text-sm leading-relaxed text-gray-600">
-                  {`Laserverj\u00fcngung, RF-Lifting, Mikrostromtherapie. Modernste Ger\u00e4te f\u00fcr schmerzfreie und wirksame Behandlungen.`}
-                </p>
-                <a
-                  href="#contact"
-                  className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-teal transition-colors hover:text-teal-dark"
-                >
-                  Mehr erfahren
-                  <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            {/* Карточка 3 */}
-            <div className="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white p-8 transition-all duration-300 hover:shadow-xl hover:shadow-teal/5 sm:col-span-2 lg:col-span-1">
-              <div className="absolute -top-6 -right-6 size-24 rounded-full bg-teal-light opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-
-              <div className="relative">
-                <div className="flex size-12 items-center justify-center rounded-xl bg-teal-light text-teal">
-                  <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09zm8.446-7.654L18 9.75l-.259-1.5a3.375 3.375 0 0 0-2.491-2.491L13.75 5.5l1.5-.259a3.375 3.375 0 0 0 2.491-2.491L18 1.25l.259 1.5a3.375 3.375 0 0 0 2.491 2.491l1.5.259-1.5.259a3.375 3.375 0 0 0-2.491 2.491z" />
-                  </svg>
-                </div>
-
-                <h3 className="mt-6 text-lg font-semibold text-foreground">{`\u00c4sthetische Pflege`}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-gray-600">
-                  Chemische Peelings, Pflegeprogramme, Reinigung und Feuchtigkeitspflege.
-                  {`Individuelle Auswahl der Behandlungen f\u00fcr Ihren Hauttyp.`}
-                </p>
-                <a
-                  href="#contact"
-                  className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-teal transition-colors hover:text-teal-dark"
-                >
-                  Mehr erfahren
-                  <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                  </svg>
-                </a>
-              </div>
+              </ScrollReveal>
             </div>
           </div>
         </div>
