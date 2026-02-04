@@ -255,7 +255,7 @@ export default function Home() {
             </div>
           </ScrollReveal>
 
-          <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-16 grid gap-10 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
             <ScrollReveal delay={100}>
               <BeforeAfterSlider
                 beforeSrc="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=600&h=800&fit=crop&crop=face"

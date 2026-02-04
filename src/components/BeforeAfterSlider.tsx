@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useEffect } from "react";
 import Image from "next/image";
 
 interface BeforeAfterProps {
@@ -22,6 +22,21 @@ export default function BeforeAfterSlider({ beforeSrc, afterSrc, label }: Before
     setPosition(percent);
   }, []);
 
+  // Block page scroll while dragging on mobile
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+
+    const preventScroll = (e: TouchEvent) => {
+      if (isDragging.current) {
+        e.preventDefault();
+      }
+    };
+
+    el.addEventListener("touchmove", preventScroll, { passive: false });
+    return () => el.removeEventListener("touchmove", preventScroll);
+  }, []);
+
   const handlePointerDown = useCallback((e: React.PointerEvent) => {
     isDragging.current = true;
     (e.target as HTMLElement).setPointerCapture(e.pointerId);
@@ -41,11 +56,12 @@ export default function BeforeAfterSlider({ beforeSrc, afterSrc, label }: Before
     <div className="group relative overflow-hidden rounded-2xl shadow-xl">
       <div
         ref={containerRef}
-        className="relative cursor-col-resize select-none"
+        className="relative cursor-col-resize select-none touch-none"
         style={{ aspectRatio: "3 / 4" }}
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
+        onPointerCancel={handlePointerUp}
       >
         {/* After image (base layer) */}
         <Image
