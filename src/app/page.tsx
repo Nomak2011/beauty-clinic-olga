@@ -7,39 +7,48 @@ export default function Home() {
       <Header />
 
       {/* ===== Hero ===== */}
-      <section className="relative min-h-screen overflow-hidden pt-24 lg:pt-0">
-        <div className="pointer-events-none absolute -top-40 right-0 size-[500px] rounded-full bg-teal-light/50 blur-3xl" />
-        <div className="pointer-events-none absolute bottom-0 -left-32 size-80 rounded-full bg-teal/10 blur-3xl" />
+      <section className="relative flex min-h-screen items-center overflow-hidden">
+        {/* Background Image */}
+        <Image
+          src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1920&h=1080&fit=crop"
+          alt={"Ästhetische Kosmetologie in Nürnberg"}
+          fill
+          priority
+          className="object-cover"
+        />
 
-        <div className="mx-auto flex max-w-7xl flex-col items-center gap-12 px-6 lg:min-h-screen lg:flex-row lg:gap-16 lg:px-8">
-          {/* Левая колонка — текст */}
-          <div className="relative z-10 flex-1 pt-8 lg:py-32">
-            <span className="inline-flex items-center gap-2 rounded-full border border-teal/20 bg-teal-light px-4 py-1.5 text-xs font-medium tracking-wide text-teal-dark">
-              <span className="inline-block size-1.5 rounded-full bg-teal" />
-              {`Kosmetologie in N\u00fcrnberg`}
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1a3c3f]/95 via-[#1a3c3f]/80 to-[#2c5a5e]/40" />
+
+        {/* Content */}
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-32 lg:px-8">
+          <div className="max-w-2xl">
+            <span className="animate-fade-in-up inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-medium tracking-wide text-white/90 backdrop-blur-sm">
+              <span className="inline-block size-1.5 rounded-full bg-teal-light" />
+              {"Kosmetologie in Nürnberg"}
             </span>
 
-            <h1 className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight text-foreground sm:text-5xl xl:text-6xl">
+            <h1 className="animate-fade-in-up animation-delay-200 mt-8 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl">
               Die Kunst der
               <br />
-              {`nat\u00fcrlichen`}
-              <span className="block text-teal">{`Verj\u00fcngung`}</span>
+              {"natürlichen"}
+              <span className="block text-teal-light">{"Verjüngung"}</span>
             </h1>
 
-            <p className="mt-6 max-w-md text-base leading-relaxed text-gray-600 sm:text-lg">
-              {`Fachkundige Betreuung f\u00fcr Ihre Sch\u00f6nheit. Individuelle Verj\u00fcngungsprogramme ohne sichtbare Eingriffe \u2014 nur nat\u00fcrliche Ergebnisse.`}
+            <p className="animate-fade-in-up animation-delay-400 mt-6 max-w-lg text-base leading-relaxed text-white/80 sm:text-lg">
+              {"Fachkundige Betreuung für Ihre Schönheit. Individuelle Verjüngungsprogramme ohne sichtbare Eingriffe — nur natürliche Ergebnisse."}
             </p>
 
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+            <div className="animate-fade-in-up animation-delay-600 mt-10 flex flex-col gap-4 sm:flex-row">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-full bg-teal px-8 py-4 text-sm font-semibold text-white shadow-lg shadow-teal/20 transition-all duration-300 hover:bg-teal-dark hover:shadow-xl hover:shadow-teal-dark/25 sm:w-auto"
+                className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-teal-dark shadow-lg transition-all duration-300 hover:bg-teal-light hover:shadow-xl sm:w-auto"
               >
                 Beratungstermin buchen
               </a>
               <a
                 href="#services"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-gray-100 px-8 py-4 text-sm font-medium text-gray-600 transition-all duration-300 hover:border-teal/30 hover:text-foreground sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-8 py-4 text-sm font-medium text-white transition-all duration-300 hover:border-white hover:bg-white/10 sm:w-auto"
               >
                 Unsere Leistungen
                 <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -47,36 +56,23 @@ export default function Home() {
                 </svg>
               </a>
             </div>
-
-            <div className="mt-14 grid max-w-sm grid-cols-3 gap-8 border-t border-gray-100 pt-8">
-              <div>
-                <p className="text-2xl font-bold text-foreground sm:text-3xl">12+</p>
-                <p className="mt-1 text-xs text-gray-400 sm:text-sm">Jahre Erfahrung</p>
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-foreground sm:text-3xl">3000+</p>
-                <p className="mt-1 text-xs text-gray-400 sm:text-sm">Behandlungen</p>
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-foreground sm:text-3xl">98%</p>
-                <p className="mt-1 text-xs text-gray-400 sm:text-sm">zufrieden</p>
-              </div>
-            </div>
           </div>
+        </div>
 
-          {/* Правая колонка — изображение */}
-          <div className="relative flex flex-1 items-end justify-center lg:self-stretch">
-            <div className="absolute bottom-0 right-0 h-[85%] w-[90%] rounded-t-[3rem] bg-gradient-to-b from-teal-light/60 to-teal-light/20" />
-
-            <div className="relative z-10 w-full max-w-md lg:max-w-lg xl:max-w-xl">
-              <Image
-                src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&h=1000&fit=crop&crop=top"
-                alt={`Kosmetikerin bei einer \u00e4sthetischen Behandlung`}
-                width={800}
-                height={1000}
-                priority
-                className="h-auto w-full rounded-t-[2.5rem] object-cover"
-              />
+        {/* Stats bar */}
+        <div className="animate-fade-in animation-delay-800 absolute right-0 bottom-0 left-0 z-10 border-t border-white/10 bg-black/20 backdrop-blur-md">
+          <div className="mx-auto flex max-w-7xl items-center justify-start gap-12 px-6 py-6 lg:gap-16 lg:px-8">
+            <div>
+              <p className="text-2xl font-bold text-white sm:text-3xl">12+</p>
+              <p className="mt-1 text-xs text-white/60 sm:text-sm">Jahre Erfahrung</p>
+            </div>
+            <div>
+              <p className="text-2xl font-bold text-white sm:text-3xl">3000+</p>
+              <p className="mt-1 text-xs text-white/60 sm:text-sm">Behandlungen</p>
+            </div>
+            <div>
+              <p className="text-2xl font-bold text-white sm:text-3xl">98%</p>
+              <p className="mt-1 text-xs text-white/60 sm:text-sm">zufrieden</p>
             </div>
           </div>
         </div>
