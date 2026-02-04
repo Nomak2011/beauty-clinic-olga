@@ -13,12 +13,14 @@ export default function Header() {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
-      {/* Topbar — контакты */}
+      {/* Topbar */}
       <div
-        className={`overflow-hidden transition-all duration-500 ease-in-out ${
-          scrolled ? "max-h-0 opacity-0" : "max-h-12 opacity-100"
-        }`}
-        style={{ backgroundColor: "#1e4d50" }}
+        className="overflow-hidden transition-all duration-500 ease-in-out"
+        style={{
+          backgroundColor: "#1e4d50",
+          maxHeight: scrolled ? "0px" : "48px",
+          opacity: scrolled ? 0 : 1,
+        }}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 text-xs text-white lg:px-8">
           <div className="flex items-center gap-6">
@@ -40,7 +42,7 @@ export default function Header() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
               <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0z" />
             </svg>
-            N&uuml;rnberg, Deutschland
+            {`N\u00fcrnberg, Deutschland`}
           </span>
         </div>
       </div>
@@ -51,8 +53,7 @@ export default function Header() {
         style={{
           backgroundColor: scrolled ? "rgba(30, 77, 80, 0.97)" : "rgba(42, 100, 104, 0.85)",
           backdropFilter: "blur(12px)",
-          WebkitBackdropFilter: "blur(12px)",
-          padding: scrolled ? "10px 0" : "20px 0",
+          padding: scrolled ? "8px 0" : "20px 0",
           boxShadow: scrolled ? "0 4px 20px rgba(0,0,0,0.15)" : "none",
         }}
       >
@@ -60,9 +61,9 @@ export default function Header() {
           <a
             href="/"
             className="font-semibold tracking-tight text-white transition-all duration-500"
-            style={{ fontSize: scrolled ? "1rem" : "1.25rem" }}
+            style={{ fontSize: scrolled ? "0.95rem" : "1.25rem" }}
           >
-            Olga&nbsp;Baher
+            {`Olga\u00a0Baher`}
           </a>
 
           <nav className="hidden items-center gap-8 md:flex">
@@ -73,16 +74,23 @@ export default function Header() {
               Preise
             </a>
             <a href="#about" className="text-sm text-white/80 transition-colors duration-300 hover:text-white">
-              &Uuml;ber uns
+              {`\u00dcber uns`}
             </a>
           </nav>
 
           <a
             href="#contact"
-            className="hidden items-center justify-center rounded-full border border-white/30 font-semibold text-white transition-all duration-500 hover:border-white hover:bg-white hover:text-teal-dark md:inline-flex"
+            className="hidden items-center justify-center rounded-full border border-white/30 font-semibold text-white transition-all duration-500 hover:border-white hover:bg-white md:inline-flex"
             style={{
-              padding: scrolled ? "6px 18px" : "10px 24px",
-              fontSize: scrolled ? "0.75rem" : "0.875rem",
+              padding: scrolled ? "5px 16px" : "10px 24px",
+              fontSize: scrolled ? "0.7rem" : "0.875rem",
+              color: "white",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.color = "#1e4d50";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.color = "white";
             }}
           >
             Kontakt
@@ -90,7 +98,7 @@ export default function Header() {
 
           <button
             className="flex size-10 items-center justify-center rounded-lg text-white md:hidden"
-            aria-label="Men&uuml; &ouml;ffnen"
+            aria-label={`Men\u00fc \u00f6ffnen`}
           >
             <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />

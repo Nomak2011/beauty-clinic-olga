@@ -16,20 +16,18 @@ export default function Home() {
           <div className="relative z-10 flex-1 pt-8 lg:py-32">
             <span className="inline-flex items-center gap-2 rounded-full border border-teal/20 bg-teal-light px-4 py-1.5 text-xs font-medium tracking-wide text-teal-dark">
               <span className="inline-block size-1.5 rounded-full bg-teal" />
-              Kosmetologie in N&uuml;rnberg
+              {`Kosmetologie in N\u00fcrnberg`}
             </span>
 
             <h1 className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight text-foreground sm:text-5xl xl:text-6xl">
               Die Kunst der
               <br />
-              nat&uuml;rlichen
-              <span className="block text-teal">Verj&uuml;ngung</span>
+              {`nat\u00fcrlichen`}
+              <span className="block text-teal">{`Verj\u00fcngung`}</span>
             </h1>
 
             <p className="mt-6 max-w-md text-base leading-relaxed text-gray-600 sm:text-lg">
-              Fachkundige Betreuung f&uuml;r Ihre Sch&ouml;nheit. Individuelle
-              Verj&uuml;ngungsprogramme ohne sichtbare Eingriffe — nur nat&uuml;rliche
-              Ergebnisse.
+              {`Fachkundige Betreuung f\u00fcr Ihre Sch\u00f6nheit. Individuelle Verj\u00fcngungsprogramme ohne sichtbare Eingriffe \u2014 nur nat\u00fcrliche Ergebnisse.`}
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -73,7 +71,7 @@ export default function Home() {
             <div className="relative z-10 w-full max-w-md lg:max-w-lg xl:max-w-xl">
               <Image
                 src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&h=1000&fit=crop&crop=top"
-                alt="Kosmetikerin bei einer &auml;sthetischen Behandlung"
+                alt={`Kosmetikerin bei einer \u00e4sthetischen Behandlung`}
                 width={800}
                 height={1000}
                 priority
@@ -91,8 +89,7 @@ export default function Home() {
             <span className="text-sm font-medium tracking-wide text-teal">Unser Angebot</span>
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Unsere Leistungen</h2>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-600">
-              Ein ganzheitlicher Ansatz f&uuml;r die Sch&ouml;nheit und Gesundheit Ihrer Haut
-              mit modernsten Methoden und zertifizierten Pr&auml;paraten.
+              {`Ein ganzheitlicher Ansatz f\u00fcr die Sch\u00f6nheit und Gesundheit Ihrer Haut mit modernsten Methoden und zertifizierten Pr\u00e4paraten.`}
             </p>
           </div>
 
@@ -111,7 +108,7 @@ export default function Home() {
                 <h3 className="mt-6 text-lg font-semibold text-foreground">Injektionskosmetik</h3>
                 <p className="mt-3 text-sm leading-relaxed text-gray-600">
                   Botulinumtherapie, Konturierung, Biorevitalisierung und Mesotherapie.
-                  Sichere Premium-Pr&auml;parate f&uuml;r nat&uuml;rliche Ergebnisse.
+                  {`Sichere Premium-Pr\u00e4parate f\u00fcr nat\u00fcrliche Ergebnisse.`}
                 </p>
                 <a
                   href="#contact"
@@ -138,8 +135,7 @@ export default function Home() {
 
                 <h3 className="mt-6 text-lg font-semibold text-foreground">Apparative Verfahren</h3>
                 <p className="mt-3 text-sm leading-relaxed text-gray-600">
-                  Laserverj&uuml;ngung, RF-Lifting, Mikrostromtherapie. Modernste Ger&auml;te
-                  f&uuml;r schmerzfreie und wirksame Behandlungen.
+                  {`Laserverj\u00fcngung, RF-Lifting, Mikrostromtherapie. Modernste Ger\u00e4te f\u00fcr schmerzfreie und wirksame Behandlungen.`}
                 </p>
                 <a
                   href="#contact"
@@ -164,10 +160,10 @@ export default function Home() {
                   </svg>
                 </div>
 
-                <h3 className="mt-6 text-lg font-semibold text-foreground">&Auml;sthetische Pflege</h3>
+                <h3 className="mt-6 text-lg font-semibold text-foreground">{`\u00c4sthetische Pflege`}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-gray-600">
                   Chemische Peelings, Pflegeprogramme, Reinigung und Feuchtigkeitspflege.
-                  Individuelle Auswahl der Behandlungen f&uuml;r Ihren Hauttyp.
+                  {`Individuelle Auswahl der Behandlungen f\u00fcr Ihren Hauttyp.`}
                 </p>
                 <a
                   href="#contact"
