@@ -20,36 +20,32 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
-        {/* Логотип */}
         <a href="/" className="text-xl font-semibold tracking-tight text-foreground">
           Olga&nbsp;Baher
         </a>
 
-        {/* Навигация — desktop */}
         <nav className="hidden items-center gap-8 md:flex">
           <a href="#services" className="text-sm text-gray-600 transition-colors hover:text-foreground">
-            Услуги
+            Leistungen
           </a>
           <a href="#pricing" className="text-sm text-gray-600 transition-colors hover:text-foreground">
-            Прайс
+            Preise
           </a>
           <a href="#about" className="text-sm text-gray-600 transition-colors hover:text-foreground">
-            О нас
+            &Uuml;ber uns
           </a>
         </nav>
 
-        {/* CTA */}
         <a
           href="#contact"
           className="hidden rounded-full bg-teal px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-teal-dark hover:shadow-lg hover:shadow-teal/25 md:inline-flex"
         >
-          Связаться
+          Kontakt
         </a>
 
-        {/* Мобильное меню — бургер */}
         <button
           className="flex size-10 items-center justify-center rounded-lg text-foreground md:hidden"
-          aria-label="Открыть меню"
+          aria-label="Men\u00fc \u00f6ffnen"
         >
           <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />

@@ -8,78 +8,72 @@ export default function Home() {
 
       {/* ===== Hero ===== */}
       <section className="relative min-h-screen overflow-hidden pt-24 lg:pt-0">
-        {/* Декоративные элементы */}
         <div className="pointer-events-none absolute -top-40 right-0 size-[500px] rounded-full bg-teal-light/50 blur-3xl" />
         <div className="pointer-events-none absolute bottom-0 -left-32 size-80 rounded-full bg-teal/10 blur-3xl" />
 
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-12 px-6 lg:min-h-screen lg:flex-row lg:gap-16 lg:px-8">
           {/* Левая колонка — текст */}
           <div className="relative z-10 flex-1 pt-8 lg:py-32">
-            {/* Бейдж */}
             <span className="inline-flex items-center gap-2 rounded-full border border-teal/20 bg-teal-light px-4 py-1.5 text-xs font-medium tracking-wide text-teal-dark">
               <span className="inline-block size-1.5 rounded-full bg-teal" />
-              Косметология в Нюрнберге
+              Kosmetologie in N&uuml;rnberg
             </span>
 
-            {/* Заголовок */}
             <h1 className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight text-foreground sm:text-5xl xl:text-6xl">
-              Искусство
+              Die Kunst der
               <br />
-              естественного
-              <span className="block text-teal">омоложения</span>
+              nat&uuml;rlichen
+              <span className="block text-teal">Verj&uuml;ngung</span>
             </h1>
 
-            {/* Подзаголовок */}
             <p className="mt-6 max-w-md text-base leading-relaxed text-gray-600 sm:text-lg">
-              Экспертный подход к вашей красоте. Индивидуальные программы
-              омоложения без следов вмешательства — только естественный результат.
+              Fachkundige Betreuung f&uuml;r Ihre Sch&ouml;nheit. Individuelle
+              Verj&uuml;ngungsprogramme ohne sichtbare Eingriffe — nur nat&uuml;rliche
+              Ergebnisse.
             </p>
 
-            {/* Кнопки */}
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
                 href="#contact"
                 className="inline-flex items-center justify-center rounded-full bg-teal px-8 py-4 text-sm font-semibold text-white shadow-lg shadow-teal/20 transition-all duration-300 hover:bg-teal-dark hover:shadow-xl hover:shadow-teal-dark/25 sm:w-auto"
               >
-                Записаться на консультацию
+                Beratungstermin buchen
               </a>
               <a
                 href="#services"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-gray-100 px-8 py-4 text-sm font-medium text-gray-600 transition-all duration-300 hover:border-teal/30 hover:text-foreground sm:w-auto"
               >
-                Наши услуги
+                Unsere Leistungen
                 <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
                 </svg>
               </a>
             </div>
 
-            {/* Статистика */}
             <div className="mt-14 grid max-w-sm grid-cols-3 gap-8 border-t border-gray-100 pt-8">
               <div>
                 <p className="text-2xl font-bold text-foreground sm:text-3xl">12+</p>
-                <p className="mt-1 text-xs text-gray-400 sm:text-sm">лет опыта</p>
+                <p className="mt-1 text-xs text-gray-400 sm:text-sm">Jahre Erfahrung</p>
               </div>
               <div>
                 <p className="text-2xl font-bold text-foreground sm:text-3xl">3000+</p>
-                <p className="mt-1 text-xs text-gray-400 sm:text-sm">процедур</p>
+                <p className="mt-1 text-xs text-gray-400 sm:text-sm">Behandlungen</p>
               </div>
               <div>
                 <p className="text-2xl font-bold text-foreground sm:text-3xl">98%</p>
-                <p className="mt-1 text-xs text-gray-400 sm:text-sm">довольных</p>
+                <p className="mt-1 text-xs text-gray-400 sm:text-sm">zufrieden</p>
               </div>
             </div>
           </div>
 
           {/* Правая колонка — изображение */}
           <div className="relative flex flex-1 items-end justify-center lg:self-stretch">
-            {/* Фоновый декор за фото */}
             <div className="absolute bottom-0 right-0 h-[85%] w-[90%] rounded-t-[3rem] bg-gradient-to-b from-teal-light/60 to-teal-light/20" />
 
             <div className="relative z-10 w-full max-w-md lg:max-w-lg xl:max-w-xl">
               <Image
                 src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&h=1000&fit=crop&crop=top"
-                alt="Косметолог — эстетическая процедура"
+                alt="Kosmetikerin bei einer &auml;sthetischen Behandlung"
                 width={800}
                 height={1000}
                 priority
@@ -90,20 +84,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== Услуги ===== */}
+      {/* ===== Leistungen ===== */}
       <section id="services" className="bg-gray-50 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          {/* Заголовок секции */}
           <div className="max-w-2xl">
-            <span className="text-sm font-medium tracking-wide text-teal">Что мы предлагаем</span>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Наши услуги</h2>
+            <span className="text-sm font-medium tracking-wide text-teal">Unser Angebot</span>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Unsere Leistungen</h2>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-600">
-              Комплексный подход к красоте и здоровью вашей кожи с использованием
-              передовых методик и сертифицированных препаратов.
+              Ein ganzheitlicher Ansatz f&uuml;r die Sch&ouml;nheit und Gesundheit Ihrer Haut
+              mit modernsten Methoden und zertifizierten Pr&auml;paraten.
             </p>
           </div>
 
-          {/* Сетка услуг */}
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {/* Карточка 1 */}
             <div className="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white p-8 transition-all duration-300 hover:shadow-xl hover:shadow-teal/5">
@@ -116,16 +108,16 @@ export default function Home() {
                   </svg>
                 </div>
 
-                <h3 className="mt-6 text-lg font-semibold text-foreground">Инъекционная косметология</h3>
+                <h3 className="mt-6 text-lg font-semibold text-foreground">Injektionskosmetik</h3>
                 <p className="mt-3 text-sm leading-relaxed text-gray-600">
-                  Ботулинотерапия, контурная пластика, биоревитализация и мезотерапия.
-                  Безопасные препараты премиум-класса для естественного результата.
+                  Botulinumtherapie, Konturierung, Biorevitalisierung und Mesotherapie.
+                  Sichere Premium-Pr&auml;parate f&uuml;r nat&uuml;rliche Ergebnisse.
                 </p>
                 <a
                   href="#contact"
                   className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-teal transition-colors hover:text-teal-dark"
                 >
-                  Подробнее
+                  Mehr erfahren
                   <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                   </svg>
@@ -144,16 +136,16 @@ export default function Home() {
                   </svg>
                 </div>
 
-                <h3 className="mt-6 text-lg font-semibold text-foreground">Аппаратные процедуры</h3>
+                <h3 className="mt-6 text-lg font-semibold text-foreground">Apparative Verfahren</h3>
                 <p className="mt-3 text-sm leading-relaxed text-gray-600">
-                  Лазерное омоложение, RF-лифтинг, микротоковая терапия. Современное
-                  оборудование для безболезненных и эффективных процедур.
+                  Laserverj&uuml;ngung, RF-Lifting, Mikrostromtherapie. Modernste Ger&auml;te
+                  f&uuml;r schmerzfreie und wirksame Behandlungen.
                 </p>
                 <a
                   href="#contact"
                   className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-teal transition-colors hover:text-teal-dark"
                 >
-                  Подробнее
+                  Mehr erfahren
                   <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                   </svg>
@@ -172,16 +164,16 @@ export default function Home() {
                   </svg>
                 </div>
 
-                <h3 className="mt-6 text-lg font-semibold text-foreground">Эстетический уход</h3>
+                <h3 className="mt-6 text-lg font-semibold text-foreground">&Auml;sthetische Pflege</h3>
                 <p className="mt-3 text-sm leading-relaxed text-gray-600">
-                  Химические пилинги, уходовые программы, чистки и увлажнение.
-                  Персонализированный подбор процедур для вашего типа кожи.
+                  Chemische Peelings, Pflegeprogramme, Reinigung und Feuchtigkeitspflege.
+                  Individuelle Auswahl der Behandlungen f&uuml;r Ihren Hauttyp.
                 </p>
                 <a
                   href="#contact"
                   className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-teal transition-colors hover:text-teal-dark"
                 >
-                  Подробнее
+                  Mehr erfahren
                   <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                   </svg>

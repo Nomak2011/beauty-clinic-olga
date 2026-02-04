@@ -8,9 +8,9 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Olga Baher — Косметология в Нюрнберге",
+  title: "Olga Baher — Kosmetologie in N\u00fcrnberg",
   description:
-    "Экспертная косметология в Нюрнберге. Инъекционные и аппаратные процедуры, эстетический уход. Естественное омоложение без следов вмешательства.",
+    "Fachkosmetik in N\u00fcrnberg. Injektions- und apparative Verfahren, \u00e4sthetische Pflege. Nat\u00fcrliche Verj\u00fcngung ohne sichtbare Eingriffe.",
 };
 
 export default function RootLayout({
