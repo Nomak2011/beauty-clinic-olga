@@ -13,10 +13,10 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md transition-all duration-300 ${
         scrolled
-          ? "bg-white/90 shadow-sm shadow-black/5 backdrop-blur-md"
-          : "bg-transparent"
+          ? "bg-gray-50/90 shadow-sm shadow-black/5"
+          : "bg-gray-50/80"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
@@ -41,7 +41,7 @@ export default function Header() {
         {/* CTA */}
         <a
           href="#contact"
-          className="hidden rounded-full bg-lime px-6 py-2.5 text-sm font-semibold text-foreground transition-all duration-300 hover:bg-lime-dark hover:shadow-lg hover:shadow-lime/25 md:inline-flex"
+          className="hidden rounded-full bg-teal px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-teal-dark hover:shadow-lg hover:shadow-teal/25 md:inline-flex"
         >
           Связаться
         </a>
