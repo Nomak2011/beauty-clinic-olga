@@ -48,16 +48,27 @@ export default function Header() {
       </div>
 
       {/* Основной хедер */}
-      <header
+      <div
         className="transition-all duration-500 ease-in-out"
         style={{
-          backgroundColor: scrolled ? "rgba(30, 77, 80, 0.97)" : "rgba(42, 100, 104, 0.85)",
-          backdropFilter: "blur(12px)",
-          padding: scrolled ? "8px 0" : "20px 0",
-          boxShadow: scrolled ? "0 4px 20px rgba(0,0,0,0.15)" : "none",
+          padding: scrolled ? "6px 16px 0" : "0",
         }}
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8">
+        <header
+          className="transition-all duration-500 ease-in-out"
+          style={{
+            backgroundColor: scrolled ? "rgba(30, 77, 80, 0.97)" : "rgba(42, 100, 104, 0.85)",
+            backdropFilter: "blur(12px)",
+            padding: scrolled ? "8px 0" : "20px 0",
+            boxShadow: scrolled
+              ? "0 8px 32px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.1)"
+              : "none",
+            borderRadius: scrolled ? "16px" : "0",
+            maxWidth: scrolled ? "1200px" : "100%",
+            margin: scrolled ? "0 auto" : "0",
+          }}
+        >
+          <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8">
           <a
             href="/"
             className="font-semibold tracking-tight text-white transition-all duration-500"
@@ -105,7 +116,8 @@ export default function Header() {
             </svg>
           </button>
         </div>
-      </header>
+        </header>
+      </div>
     </div>
   );
 }
