@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "@/components/sections/Header";
 import ScrollReveal from "@/components/ScrollReveal";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
+import FAQAccordion from "@/components/FAQAccordion";
 
 export default function Home() {
   return (
@@ -552,6 +553,80 @@ export default function Home() {
               </div>
             </div>
           </ScrollReveal>
+        </div>
+      </section>
+
+      {/* ===== FAQ ===== */}
+      <section id="faq" className="relative overflow-hidden bg-white py-24 sm:py-32">
+        {/* Decorative elements */}
+        <div className="pointer-events-none absolute -top-40 -right-40 size-[400px] rounded-full bg-teal-light/50 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-40 -left-40 size-[300px] rounded-full bg-accent/10 blur-3xl" />
+
+        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+            {/* Left column - Header */}
+            <ScrollReveal>
+              <div className="lg:sticky lg:top-32">
+                <span className="text-sm font-medium tracking-wide text-teal">FAQ</span>
+                <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+                  {"Häufig gestellte Fragen"}
+                </h2>
+                <p className="mt-4 text-base leading-relaxed text-gray-600">
+                  {"Hier finden Sie Antworten auf die häufigsten Fragen zu unseren Behandlungen. Haben Sie weitere Fragen? Kontaktieren Sie uns gerne!"}
+                </p>
+
+                <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                  <a
+                    href="#contact"
+                    className="inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:bg-accent-dark hover:shadow-xl"
+                  >
+                    Frage stellen
+                  </a>
+                  <a
+                    href="tel:+4917612345678"
+                    className="inline-flex items-center justify-center gap-2 rounded-full border border-gray-200 px-6 py-3 text-sm font-semibold text-foreground transition-all duration-300 hover:border-teal hover:text-teal"
+                  >
+                    <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25z" />
+                    </svg>
+                    Anrufen
+                  </a>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* Right column - Accordion */}
+            <ScrollReveal delay={200}>
+              <FAQAccordion
+                items={[
+                  {
+                    question: "Tut die Behandlung weh?",
+                    answer: "Die meisten unserer Behandlungen sind schmerzarm oder schmerzfrei. Bei Injektionsbehandlungen verwenden wir spezielle Betäubungscremes, um Ihren Komfort zu gewährleisten. Viele Patienten beschreiben das Gefühl als leichtes Prickeln oder Druckgefühl.",
+                  },
+                  {
+                    question: "Wie lange hält das Ergebnis an?",
+                    answer: "Die Haltbarkeit variiert je nach Behandlung. Hyaluronsäure-Behandlungen halten in der Regel 6-12 Monate, Sculptra bis zu 2 Jahre. Bei apparativen Verfahren wie RF-Microneedling sind die Ergebnisse langanhaltend, wobei regelmäßige Auffrischungen empfohlen werden.",
+                  },
+                  {
+                    question: "Wie bereite ich mich auf die Behandlung vor?",
+                    answer: "Wir empfehlen, 24 Stunden vor der Behandlung auf Alkohol und blutverdünnende Medikamente zu verzichten. Kommen Sie mit gereinigter Haut ohne Make-up. Bei der Erstberatung besprechen wir alle individuellen Vorbereitungsmaßnahmen.",
+                  },
+                  {
+                    question: "Gibt es Nebenwirkungen?",
+                    answer: "Mögliche Nebenwirkungen sind in der Regel mild und vorübergehend: leichte Rötungen, Schwellungen oder kleine Blutergüsse. Diese klingen meist innerhalb weniger Tage ab. Wir informieren Sie vor jeder Behandlung ausführlich über mögliche Risiken.",
+                  },
+                  {
+                    question: "Wann sehe ich die Ergebnisse?",
+                    answer: "Bei einigen Behandlungen wie Hyaluronsäure-Fillern sind die Ergebnisse sofort sichtbar. Bei anderen Verfahren wie RF-Microneedling oder Biorevitalisierung entwickelt sich das Ergebnis über mehrere Wochen, da die Kollagenproduktion angeregt wird.",
+                  },
+                  {
+                    question: "Ist die Erstberatung kostenlos?",
+                    answer: "Ja, die Erstberatung ist bei uns völlig kostenlos und unverbindlich. Wir nehmen uns Zeit, Ihre Wünsche zu verstehen, Ihre Haut zu analysieren und einen individuellen Behandlungsplan zu erstellen.",
+                  },
+                ]}
+              />
+            </ScrollReveal>
+          </div>
         </div>
       </section>
     </div>
