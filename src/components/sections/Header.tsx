@@ -17,7 +17,7 @@ export default function Header() {
       <div
         className="overflow-hidden transition-all duration-500 ease-in-out"
         style={{
-          backgroundColor: "#1e4d50",
+          backgroundColor: "#3a5c60",
           maxHeight: scrolled ? "0px" : "48px",
           opacity: scrolled ? 0 : 1,
         }}
@@ -57,7 +57,7 @@ export default function Header() {
         <header
           className="transition-all duration-500 ease-in-out"
           style={{
-            backgroundColor: scrolled ? "rgba(30, 77, 80, 0.97)" : "rgba(42, 100, 104, 0.85)",
+            backgroundColor: scrolled ? "rgba(58, 92, 96, 0.97)" : "rgba(72, 114, 119, 0.85)",
             backdropFilter: "blur(12px)",
             padding: scrolled ? "8px 0" : "20px 0",
             boxShadow: scrolled
@@ -98,7 +98,7 @@ export default function Header() {
               color: "white",
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.color = "#1e4d50";
+              e.currentTarget.style.color = "#3a5c60";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.color = "white";

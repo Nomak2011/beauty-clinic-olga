@@ -20,13 +20,13 @@ export default function Home() {
         />
 
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#3a7378]/55 via-[#4a9ba3]/35 to-[#5ab5bd]/15" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#487277]/60 via-[#5a8a8f]/40 to-[#d08a75]/15" />
 
         {/* Content */}
         <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-32 lg:px-8">
           <div className="max-w-2xl">
             <span className="animate-fade-in-up inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-medium tracking-wide text-white/90 backdrop-blur-sm">
-              <span className="inline-block size-1.5 rounded-full bg-teal-light" />
+              <span className="inline-block size-1.5 rounded-full bg-accent" />
               {"Kosmetologie in Nürnberg"}
             </span>
 
@@ -44,7 +44,7 @@ export default function Home() {
             <div className="animate-fade-in-up animation-delay-600 mt-10 flex flex-col gap-4 sm:flex-row">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-teal-dark shadow-lg transition-all duration-300 hover:bg-teal-light hover:shadow-xl sm:w-auto"
+                className="inline-flex items-center justify-center rounded-full bg-accent px-8 py-4 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:bg-accent-dark hover:shadow-xl sm:w-auto"
               >
                 Beratungstermin buchen
               </a>
@@ -107,7 +107,7 @@ export default function Home() {
                   <p className="mt-3 text-sm leading-relaxed text-gray-600">
                     {"Botulinumtherapie, Konturierung, Biorevitalisierung und Mesotherapie. Sichere Premium-Präparate für natürliche Ergebnisse."}
                   </p>
-                  <a href="#contact" className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-teal transition-colors hover:text-teal-dark">
+                  <a href="#contact" className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-teal transition-colors hover:text-accent">
                     Mehr erfahren
                     <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
@@ -130,7 +130,7 @@ export default function Home() {
                   <p className="mt-3 text-sm leading-relaxed text-gray-600">
                     {"Laserverjüngung, RF-Lifting, Mikrostromtherapie. Modernste Geräte für schmerzfreie und wirksame Behandlungen."}
                   </p>
-                  <a href="#contact" className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-teal transition-colors hover:text-teal-dark">
+                  <a href="#contact" className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-teal transition-colors hover:text-accent">
                     Mehr erfahren
                     <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
@@ -153,7 +153,7 @@ export default function Home() {
                   <p className="mt-3 text-sm leading-relaxed text-gray-600">
                     {"Chemische Peelings, Pflegeprogramme, Reinigung und Feuchtigkeitspflege. Individuelle Auswahl der Behandlungen für Ihren Hauttyp."}
                   </p>
-                  <a href="#contact" className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-teal transition-colors hover:text-teal-dark">
+                  <a href="#contact" className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-teal transition-colors hover:text-accent">
                     Mehr erfahren
                     <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
@@ -167,7 +167,7 @@ export default function Home() {
       </section>
 
       {/* ===== Über uns ===== */}
-      <section id="about" className="relative overflow-hidden bg-[#1e4d50] py-24 sm:py-32">
+      <section id="about" className="relative overflow-hidden bg-[#3a5c60] py-24 sm:py-32">
         <div className="pointer-events-none absolute -top-40 -right-40 size-[500px] rounded-full bg-teal/20 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-40 -left-40 size-[400px] rounded-full bg-teal-light/10 blur-3xl" />
 
@@ -231,7 +231,7 @@ export default function Home() {
               <ScrollReveal delay={600}>
                 <a
                   href="#contact"
-                  className="mt-10 inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-teal-dark shadow-lg transition-all duration-300 hover:bg-teal-light hover:shadow-xl"
+                  className="mt-10 inline-flex items-center justify-center rounded-full bg-accent px-8 py-4 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:bg-accent-dark hover:shadow-xl"
                 >
                   {"Beratungsgespräch vereinbaren"}
                 </a>
