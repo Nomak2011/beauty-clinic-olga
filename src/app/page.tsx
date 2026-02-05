@@ -53,7 +53,7 @@ export default function Home() {
               </a>
               <a
                 href="#services"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-8 py-4 text-sm font-medium text-white transition-all duration-300 hover:border-white hover:bg-white/10 sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-white/60 bg-white/15 px-8 py-4 text-sm font-semibold text-white shadow-lg backdrop-blur-sm transition-all duration-300 hover:border-white hover:bg-white/25 sm:w-auto"
               >
                 Unsere Leistungen
                 <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
