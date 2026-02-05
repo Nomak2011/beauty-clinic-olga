@@ -58,3 +58,19 @@ html {
 .animation-delay-400 { animation-delay: 400ms; }
 .animation-delay-600 { animation-delay: 600ms; }
 .animation-delay-800 { animation-delay: 800ms; }
+
+/* === Button shimmer effect === */
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s linear infinite;
+}
+
+/* === Pulse glow for accents === */
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 20px rgba(208, 138, 117, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(208, 138, 117, 0.6); }
+}
