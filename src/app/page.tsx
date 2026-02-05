@@ -288,6 +288,122 @@ export default function Home() {
           </ScrollReveal>
         </div>
       </section>
+
+      {/* ===== Preise ===== */}
+      <section id="pricing" className="bg-gray-50 py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <ScrollReveal>
+            <div className="text-center">
+              <span className="text-sm font-medium tracking-wide text-teal">Transparente Preise</span>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+                Unsere Preisliste
+              </h2>
+              <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-600">
+                {"Alle Preise verstehen sich als Richtwerte. Der genaue Preis wird nach einer persönlichen Beratung individuell festgelegt."}
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <div className="mt-16 grid gap-8 lg:grid-cols-3">
+            {/* Injektionsbehandlungen */}
+            <ScrollReveal delay={100}>
+              <div className="rounded-2xl border border-gray-100 bg-white p-8 shadow-sm">
+                <div className="flex items-center gap-3">
+                  <div className="flex size-10 items-center justify-center rounded-xl bg-accent/10 text-accent">
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="m9 12.75 1.5 1.5 4.5-4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">Injektionsbehandlungen</h3>
+                </div>
+                <ul className="mt-6 space-y-4">
+                  {[
+                    { name: "Faltenunterspritzung Hyaluron", price: "ab XXX €" },
+                    { name: "Biorevitalisierung", price: "ab XXX €" },
+                    { name: "Sculptra-Injektion", price: "ab XXX €" },
+                    { name: "Injektionslipolyse", price: "ab XXX €" },
+                    { name: "Fadenlifting COG-Fäden", price: "ab XXX €" },
+                  ].map((item) => (
+                    <li key={item.name} className="flex items-center justify-between border-b border-gray-100 pb-3 last:border-0 last:pb-0">
+                      <span className="text-sm text-gray-600">{item.name}</span>
+                      <span className="text-sm font-semibold text-teal">{item.price}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </ScrollReveal>
+
+            {/* Apparative Verfahren */}
+            <ScrollReveal delay={250}>
+              <div className="rounded-2xl border border-gray-100 bg-white p-8 shadow-sm">
+                <div className="flex items-center gap-3">
+                  <div className="flex size-10 items-center justify-center rounded-xl bg-teal/10 text-teal">
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714a2.25 2.25 0 0 0 .659 1.591L19 14.5M14.25 3.104c.251.023.501.05.75.082M19 14.5l-1.47 4.43a2.25 2.25 0 0 1-2.133 1.57H8.603a2.25 2.25 0 0 1-2.134-1.57L5 14.5m14 0H5" />
+                    </svg>
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">Apparative Verfahren</h3>
+                </div>
+                <ul className="mt-6 space-y-4">
+                  {[
+                    { name: "LPG Endermologie", price: "ab XXX €" },
+                    { name: "RF Microneedling", price: "ab XXX €" },
+                    { name: "IPL Hautverjüngung", price: "ab XXX €" },
+                    { name: "Laser Haarentfernung", price: "ab XXX €" },
+                    { name: "AquaFacial", price: "ab XXX €" },
+                  ].map((item) => (
+                    <li key={item.name} className="flex items-center justify-between border-b border-gray-100 pb-3 last:border-0 last:pb-0">
+                      <span className="text-sm text-gray-600">{item.name}</span>
+                      <span className="text-sm font-semibold text-teal">{item.price}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </ScrollReveal>
+
+            {/* Pflege & Wellness */}
+            <ScrollReveal delay={400}>
+              <div className="rounded-2xl border border-gray-100 bg-white p-8 shadow-sm">
+                <div className="flex items-center gap-3">
+                  <div className="flex size-10 items-center justify-center rounded-xl bg-accent/10 text-accent">
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">Pflege & Wellness</h3>
+                </div>
+                <ul className="mt-6 space-y-4">
+                  {[
+                    { name: "Professionelles Peeling", price: "ab XXX €" },
+                    { name: "Gesundheit & Wohlbefinden", price: "ab XXX €" },
+                  ].map((item) => (
+                    <li key={item.name} className="flex items-center justify-between border-b border-gray-100 pb-3 last:border-0 last:pb-0">
+                      <span className="text-sm text-gray-600">{item.name}</span>
+                      <span className="text-sm font-semibold text-teal">{item.price}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-8 rounded-xl bg-teal-light/50 p-4">
+                  <p className="text-xs leading-relaxed text-teal-dark">
+                    <strong>Hinweis:</strong> Alle Behandlungen beginnen mit einem kostenlosen Beratungsgespräch, in dem wir Ihre Wünsche besprechen und einen individuellen Behandlungsplan erstellen.
+                  </p>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+
+          <ScrollReveal delay={200}>
+            <div className="mt-12 text-center">
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center rounded-full bg-accent px-8 py-4 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:bg-accent-dark hover:shadow-xl"
+              >
+                Kostenlose Beratung anfragen
+              </a>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
     </div>
   );
 }
