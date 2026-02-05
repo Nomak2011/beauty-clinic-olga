@@ -77,9 +77,12 @@ export default function Header() {
             {`Olga\u00a0Baher`}
           </a>
 
-          <nav className="hidden items-center gap-8 md:flex">
+          <nav className="hidden items-center gap-6 lg:flex">
             <a href="#services" className="text-sm text-white/80 transition-colors duration-300 hover:text-white">
               Leistungen
+            </a>
+            <a href="#results" className="text-sm text-white/80 transition-colors duration-300 hover:text-white">
+              Ergebnisse
             </a>
             <a href="#pricing" className="text-sm text-white/80 transition-colors duration-300 hover:text-white">
               Preise
@@ -87,11 +90,14 @@ export default function Header() {
             <a href="#about" className="text-sm text-white/80 transition-colors duration-300 hover:text-white">
               {`\u00dcber uns`}
             </a>
+            <a href="#contact" className="text-sm text-white/80 transition-colors duration-300 hover:text-white">
+              Kontakt
+            </a>
           </nav>
 
           <a
             href="#contact"
-            className="hidden items-center justify-center rounded-full border border-white/30 font-semibold text-white transition-all duration-500 hover:border-white hover:bg-white md:inline-flex"
+            className="hidden items-center justify-center rounded-full border border-white/30 font-semibold text-white transition-all duration-500 hover:border-white hover:bg-white lg:inline-flex"
             style={{
               padding: scrolled ? "5px 16px" : "10px 24px",
               fontSize: scrolled ? "0.7rem" : "0.875rem",
@@ -104,7 +110,7 @@ export default function Header() {
               e.currentTarget.style.color = "white";
             }}
           >
-            Kontakt
+            Termin buchen
           </a>
 
           <button
