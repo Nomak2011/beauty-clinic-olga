@@ -423,6 +423,137 @@ export default function Home() {
           </ScrollReveal>
         </div>
       </section>
+
+      {/* ===== Bewertungen ===== */}
+      <section id="reviews" className="relative overflow-hidden bg-[#3a5c60] py-24 sm:py-32">
+        {/* Decorative elements */}
+        <div className="pointer-events-none absolute -top-40 -right-40 size-[500px] rounded-full bg-teal/20 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-40 -left-40 size-[400px] rounded-full bg-accent/10 blur-3xl" />
+
+        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+          <ScrollReveal>
+            <div className="text-center">
+              <span className="text-sm font-medium tracking-wide text-accent-light">Kundenstimmen</span>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Was unsere Kunden sagen
+              </h2>
+              <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/70">
+                {"Ihre Zufriedenheit ist unser größter Erfolg. Lesen Sie, was unsere Kunden über ihre Erfahrungen berichten."}
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                name: "Maria S.",
+                treatment: "Faltenunterspritzung",
+                text: "Ich bin absolut begeistert von dem Ergebnis! Frau Baher hat sich viel Zeit für die Beratung genommen und das Ergebnis sieht so natürlich aus. Sehr empfehlenswert!",
+                rating: 5,
+              },
+              {
+                name: "Christina W.",
+                treatment: "AquaFacial",
+                text: "Meine Haut hat sich nach der Behandlung komplett verändert. Sie ist viel strahlender und gepflegter. Die Atmosphäre in der Praxis ist sehr angenehm und professionell.",
+                rating: 5,
+              },
+              {
+                name: "Sabine M.",
+                treatment: "RF Microneedling",
+                text: "Nach nur wenigen Sitzungen sehe ich bereits deutliche Verbesserungen. Frau Baher erklärt alles sehr genau und man fühlt sich in guten Händen.",
+                rating: 5,
+              },
+              {
+                name: "Julia K.",
+                treatment: "Biorevitalisierung",
+                text: "Die beste Entscheidung, die ich für meine Haut getroffen habe! Das Team ist super freundlich und die Ergebnisse sprechen für sich.",
+                rating: 5,
+              },
+              {
+                name: "Anna L.",
+                treatment: "LPG Endermologie",
+                text: "Endlich eine Behandlung, die wirklich funktioniert! Ich komme regelmäßig und bin jedes Mal aufs Neue begeistert von der professionellen Betreuung.",
+                rating: 5,
+              },
+              {
+                name: "Petra H.",
+                treatment: "IPL Hautverjüngung",
+                text: "Ich hätte nie gedacht, dass meine Haut so gut aussehen kann. Frau Baher ist eine wahre Expertin auf ihrem Gebiet. Vielen Dank!",
+                rating: 5,
+              },
+            ].map((review, index) => (
+              <ScrollReveal key={review.name} delay={100 + index * 100}>
+                <div className="group relative h-full rounded-2xl bg-white/5 p-8 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:bg-white/10">
+                  {/* Glow effect */}
+                  <div className="absolute -inset-px rounded-2xl bg-gradient-to-b from-white/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+
+                  <div className="relative">
+                    {/* Stars */}
+                    <div className="flex gap-1">
+                      {[...Array(review.rating)].map((_, i) => (
+                        <svg
+                          key={i}
+                          width="18"
+                          height="18"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          className="text-accent transition-transform duration-300"
+                          style={{ transitionDelay: `${i * 50}ms` }}
+                        >
+                          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                      ))}
+                    </div>
+
+                    {/* Quote */}
+                    <p className="mt-5 text-sm leading-relaxed text-white/80">
+                      {`"${review.text}"`}
+                    </p>
+
+                    {/* Author */}
+                    <div className="mt-6 flex items-center gap-4">
+                      <div className="flex size-12 items-center justify-center rounded-full bg-accent/20 text-lg font-semibold text-accent transition-all duration-300 group-hover:bg-accent group-hover:text-white">
+                        {review.name.charAt(0)}
+                      </div>
+                      <div>
+                        <p className="font-semibold text-white">{review.name}</p>
+                        <p className="text-xs text-white/50">{review.treatment}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          {/* Trust badges */}
+          <ScrollReveal delay={300}>
+            <div className="mt-16 flex flex-wrap items-center justify-center gap-8 border-t border-white/10 pt-12">
+              <div className="flex items-center gap-3 text-white/60">
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12z" />
+                </svg>
+                <span className="text-sm">Verifizierte Bewertungen</span>
+              </div>
+              <div className="flex items-center gap-3 text-white/60">
+                <div className="flex items-center gap-1">
+                  <span className="text-2xl font-bold text-accent">4.9</span>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="text-accent">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                </div>
+                <span className="text-sm">Durchschnittliche Bewertung</span>
+              </div>
+              <div className="flex items-center gap-3 text-white/60">
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                </svg>
+                <span className="text-sm">98% zufriedene Kunden</span>
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
     </div>
   );
 }
