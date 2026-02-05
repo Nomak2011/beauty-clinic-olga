@@ -3,11 +3,13 @@ import Header from "@/components/sections/Header";
 import ScrollReveal from "@/components/ScrollReveal";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import FAQAccordion from "@/components/FAQAccordion";
+import FloatingButtons from "@/components/FloatingButtons";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
+      <FloatingButtons />
 
       {/* ===== Hero ===== */}
       <section className="relative flex min-h-screen items-center overflow-hidden">
