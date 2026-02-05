@@ -583,7 +583,7 @@ export default function Home() {
                     Frage stellen
                   </a>
                   <a
-                    href="tel:+4917612345678"
+                    href="tel:+4917634589928"
                     className="inline-flex items-center justify-center gap-2 rounded-full border border-gray-200 px-6 py-3 text-sm font-semibold text-foreground transition-all duration-300 hover:border-teal hover:text-teal"
                   >
                     <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -625,6 +625,138 @@ export default function Home() {
                   },
                 ]}
               />
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== Kontakt ===== */}
+      <section id="contact" className="relative overflow-hidden bg-gray-50 py-24 sm:py-32">
+        {/* Decorative elements */}
+        <div className="pointer-events-none absolute -top-40 -left-40 size-[400px] rounded-full bg-teal/5 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-40 -right-40 size-[300px] rounded-full bg-accent/5 blur-3xl" />
+
+        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+          <ScrollReveal>
+            <div className="text-center">
+              <span className="text-sm font-medium tracking-wide text-teal">Kontakt</span>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+                Besuchen Sie uns
+              </h2>
+              <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-600">
+                {"Wir freuen uns auf Ihren Besuch! Vereinbaren Sie einen Termin oder kommen Sie einfach vorbei."}
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <div className="mt-16 grid gap-8 lg:grid-cols-2">
+            {/* Left column - Map */}
+            <ScrollReveal delay={100}>
+              <div className="overflow-hidden rounded-2xl shadow-xl">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2599.5!2d11.0766!3d49.4694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479f57a2c7d1d2e7%3A0x0!2sSchleifweg%2057%2C%2090409%20N%C3%BCrnberg!5e0!3m2!1sde!2sde!4v1700000000000"
+                  width="100%"
+                  height="450"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full"
+                  title="Praxis Olga Bakher Standort"
+                />
+              </div>
+            </ScrollReveal>
+
+            {/* Right column - Contact info */}
+            <ScrollReveal delay={200}>
+              <div className="flex h-full flex-col gap-6">
+                {/* Contact cards */}
+                <div className="group rounded-2xl border border-gray-100 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-teal/20 hover:shadow-lg">
+                  <div className="flex items-start gap-4">
+                    <div className="flex size-12 flex-shrink-0 items-center justify-center rounded-xl bg-teal-light text-teal transition-all duration-300 group-hover:bg-teal group-hover:text-white">
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground">Adresse</h3>
+                      <p className="mt-1 text-sm text-gray-600">Schleifweg 57</p>
+                      <p className="text-sm text-gray-600">90409 Nürnberg</p>
+                      <a
+                        href="https://maps.google.com/?q=Schleifweg+57,+90409+Nürnberg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-teal transition-colors hover:text-accent"
+                      >
+                        Route planen
+                        <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="group rounded-2xl border border-gray-100 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent/20 hover:shadow-lg">
+                  <div className="flex items-start gap-4">
+                    <div className="flex size-12 flex-shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent transition-all duration-300 group-hover:bg-accent group-hover:text-white">
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground">Kontaktdaten</h3>
+                      <a href="tel:+4917634589928" className="mt-1 block text-sm text-gray-600 transition-colors hover:text-accent">
+                        +49 176 345 899 28
+                      </a>
+                      <a href="mailto:praxisolgabakher@web.de" className="block text-sm text-gray-600 transition-colors hover:text-accent">
+                        praxisolgabakher@web.de
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="group flex-1 rounded-2xl border border-gray-100 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-teal/20 hover:shadow-lg">
+                  <div className="flex items-start gap-4">
+                    <div className="flex size-12 flex-shrink-0 items-center justify-center rounded-xl bg-teal-light text-teal transition-all duration-300 group-hover:bg-teal group-hover:text-white">
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" />
+                      </svg>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-semibold text-foreground">Öffnungszeiten</h3>
+                      <div className="mt-3 space-y-2">
+                        {[
+                          { days: "Montag – Mittwoch", hours: "14:00 – 19:00 Uhr" },
+                          { days: "Donnerstag – Freitag", hours: "09:00 – 19:00 Uhr" },
+                          { days: "Samstag", hours: "10:00 – 14:00 Uhr" },
+                          { days: "Sonntag", hours: "Geschlossen", closed: true },
+                        ].map((item) => (
+                          <div key={item.days} className="flex items-center justify-between text-sm">
+                            <span className="text-gray-600">{item.days}</span>
+                            <span className={item.closed ? "font-medium text-accent" : "font-medium text-foreground"}>
+                              {item.hours}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* CTA */}
+                <a
+                  href="tel:+4917634589928"
+                  className="group/btn relative flex items-center justify-center gap-3 overflow-hidden rounded-2xl bg-accent p-6 text-white shadow-lg transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-accent/30"
+                >
+                  <span className="absolute inset-0 bg-gradient-to-r from-accent-dark via-accent to-accent-dark bg-[length:200%_100%] opacity-0 transition-opacity duration-500 group-hover/btn:animate-shimmer group-hover/btn:opacity-100" />
+                  <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} className="relative">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25z" />
+                  </svg>
+                  <span className="relative text-lg font-semibold">Jetzt anrufen</span>
+                </a>
+              </div>
             </ScrollReveal>
           </div>
         </div>
