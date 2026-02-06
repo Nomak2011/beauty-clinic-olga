@@ -27,16 +27,15 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-32 lg:px-8">
-          <div className="max-w-2xl">
+          <div className="max-w-3xl">
             <span className="animate-fade-in-up inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-medium tracking-wide text-white/90 backdrop-blur-sm">
               <span className="inline-block size-1.5 rounded-full bg-accent" />
               {"Kosmetologie in Nürnberg"}
             </span>
 
-            <h1 className="animate-fade-in-up animation-delay-200 mt-8 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl">
+            <h1 className="animate-fade-in-up animation-delay-200 mt-8 text-3xl font-bold leading-[1.2] tracking-tight text-white sm:text-4xl lg:text-5xl">
               Medizinische Ästhetik &{" "}
-              <span className="text-teal-light">Heilpraktik</span> in Nürnberg
-              <span className="block text-white/90">– sanfte Methoden, sichtbare Ergebnisse.</span>
+              <span className="text-teal-light">Heilpraktik</span> in Nürnberg – sanfte Methoden, sichtbare Ergebnisse.
             </h1>
 
             <p className="animate-fade-in-up animation-delay-400 mt-6 max-w-lg text-base leading-relaxed text-white/80 sm:text-lg">
