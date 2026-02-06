@@ -34,10 +34,9 @@ export default function Home() {
             </span>
 
             <h1 className="animate-fade-in-up animation-delay-200 mt-8 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl">
-              Die Kunst der
-              <br />
-              {"natürlichen"}
-              <span className="block text-teal-light">{"Verjüngung"}</span>
+              Medizinische Ästhetik &{" "}
+              <span className="text-teal-light">Heilpraktik</span> in Nürnberg
+              <span className="block text-white/90">– sanfte Methoden, sichtbare Ergebnisse.</span>
             </h1>
 
             <p className="animate-fade-in-up animation-delay-400 mt-6 max-w-lg text-base leading-relaxed text-white/80 sm:text-lg">
