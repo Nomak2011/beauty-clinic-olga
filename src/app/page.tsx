@@ -82,16 +82,16 @@ export default function Home() {
       </section>
 
       {/* ===== Über uns ===== */}
-      <section id="about" className="relative overflow-hidden bg-[#3a5c60] py-24 sm:py-32">
-        <div className="pointer-events-none absolute -top-40 -right-40 size-[500px] rounded-full bg-teal/20 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-40 -left-40 size-[400px] rounded-full bg-teal-light/10 blur-3xl" />
+      <section id="about" className="relative overflow-hidden bg-gray-50 py-24 sm:py-32">
+        <div className="pointer-events-none absolute -top-40 -right-40 size-[500px] rounded-full bg-teal/5 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-40 -left-40 size-[400px] rounded-full bg-accent/5 blur-3xl" />
 
         <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
           <div className="flex flex-col items-center gap-16 lg:flex-row lg:gap-20">
             {/* Фото */}
             <ScrollReveal className="w-full flex-shrink-0 lg:w-[45%]">
               <div className="relative">
-                <div className="absolute -top-4 -left-4 h-full w-full rounded-2xl border-2 border-teal-light/20" />
+                <div className="absolute -top-4 -left-4 h-full w-full rounded-2xl border-2 border-teal/20" />
                 <Image
                   src="https://images.unsplash.com/photo-1559599101-f09722fb4948?w=700&h=850&fit=crop&crop=top"
                   alt="Olga Baher — Fachkosmetikerin"
@@ -105,20 +105,20 @@ export default function Home() {
             {/* Текст */}
             <div className="flex-1">
               <ScrollReveal>
-                <span className="text-sm font-medium tracking-wide text-teal-light/80">Ihre Expertin</span>
-                <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                <span className="text-sm font-medium tracking-wide text-teal">Ihre Expertin</span>
+                <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
                   Olga Baher
                 </h2>
-                <p className="mt-2 text-lg font-medium text-teal-light">
+                <p className="mt-2 text-lg font-medium text-teal">
                   {"Fachkosmetikerin für ästhetische Verfahren"}
                 </p>
               </ScrollReveal>
 
               <ScrollReveal delay={200}>
-                <p className="mt-6 text-base leading-relaxed text-white/75">
+                <p className="mt-6 text-base leading-relaxed text-gray-600">
                   {"Mit über 12 Jahren Erfahrung in der ästhetischen Kosmetologie biete ich Ihnen individuelle Behandlungen auf höchstem Niveau. Mein Ziel ist es, Ihre natürliche Schönheit zu betonen und Ihr Wohlbefinden zu steigern — ohne sichtbare Eingriffe."}
                 </p>
-                <p className="mt-4 text-base leading-relaxed text-white/75">
+                <p className="mt-4 text-base leading-relaxed text-gray-600">
                   {"Jede Behandlung beginnt mit einer ausführlichen Beratung. Gemeinsam finden wir die optimale Lösung für Ihre individuellen Bedürfnisse."}
                 </p>
               </ScrollReveal>
@@ -132,12 +132,12 @@ export default function Home() {
                     "Regelmäßige Schulungen & Zertifizierungen",
                   ].map((item) => (
                     <div key={item} className="flex items-center gap-3">
-                      <div className="flex size-6 flex-shrink-0 items-center justify-center rounded-full bg-teal-light/20">
-                        <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} className="text-teal-light">
+                      <div className="flex size-6 flex-shrink-0 items-center justify-center rounded-full bg-teal-light">
+                        <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} className="text-teal">
                           <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                         </svg>
                       </div>
-                      <span className="text-sm text-white/80">{item}</span>
+                      <span className="text-sm text-gray-700">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -157,13 +157,15 @@ export default function Home() {
       </section>
 
       {/* ===== Leistungen ===== */}
-      <section id="services" className="bg-gray-50 py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <section id="services" className="relative overflow-hidden bg-[#3a5c60] py-24 sm:py-32">
+        <div className="pointer-events-none absolute -top-40 -right-40 size-[500px] rounded-full bg-teal/20 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-40 -left-40 size-[400px] rounded-full bg-teal-light/10 blur-3xl" />
+        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
           <ScrollReveal>
             <div className="max-w-2xl">
-              <span className="text-sm font-medium tracking-wide text-teal">Unser Angebot</span>
-              <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Unsere Leistungen</h2>
-              <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-600">
+              <span className="text-sm font-medium tracking-wide text-teal-light/80">Unser Angebot</span>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">Unsere Leistungen</h2>
+              <p className="mt-4 max-w-xl text-base leading-relaxed text-white/70">
                 {"Ein ganzheitlicher Ansatz für die Schönheit und Gesundheit Ihrer Haut mit modernsten Methoden und zertifizierten Präparaten."}
               </p>
             </div>
