@@ -35,7 +35,7 @@ export default function Home() {
 
             <h1 className="animate-fade-in-up animation-delay-200 mt-8 text-3xl font-bold leading-[1.2] tracking-tight text-white sm:text-4xl lg:text-5xl">
               Medizinische Ästhetik &{" "}
-              <span className="text-teal-light">Heilpraktik</span> in Nürnberg – sanfte Methoden, sichtbare Ergebnisse.
+              <span className="text-teal-light">Heilpraktik</span> in Nürnberg – sanfte Methoden, sichtbare Ergebnisse!!!
             </h1>
 
             <p className="animate-fade-in-up animation-delay-400 mt-6 max-w-lg text-base leading-relaxed text-white/80 sm:text-lg">
