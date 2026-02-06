@@ -81,6 +81,81 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ===== Über uns ===== */}
+      <section id="about" className="relative overflow-hidden bg-[#3a5c60] py-24 sm:py-32">
+        <div className="pointer-events-none absolute -top-40 -right-40 size-[500px] rounded-full bg-teal/20 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-40 -left-40 size-[400px] rounded-full bg-teal-light/10 blur-3xl" />
+
+        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="flex flex-col items-center gap-16 lg:flex-row lg:gap-20">
+            {/* Фото */}
+            <ScrollReveal className="w-full flex-shrink-0 lg:w-[45%]">
+              <div className="relative">
+                <div className="absolute -top-4 -left-4 h-full w-full rounded-2xl border-2 border-teal-light/20" />
+                <Image
+                  src="https://images.unsplash.com/photo-1559599101-f09722fb4948?w=700&h=850&fit=crop&crop=top"
+                  alt="Olga Baher — Fachkosmetikerin"
+                  width={700}
+                  height={850}
+                  className="relative z-10 w-full rounded-2xl object-cover shadow-2xl"
+                />
+              </div>
+            </ScrollReveal>
+
+            {/* Текст */}
+            <div className="flex-1">
+              <ScrollReveal>
+                <span className="text-sm font-medium tracking-wide text-teal-light/80">Ihre Expertin</span>
+                <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                  Olga Baher
+                </h2>
+                <p className="mt-2 text-lg font-medium text-teal-light">
+                  {"Fachkosmetikerin für ästhetische Verfahren"}
+                </p>
+              </ScrollReveal>
+
+              <ScrollReveal delay={200}>
+                <p className="mt-6 text-base leading-relaxed text-white/75">
+                  {"Mit über 12 Jahren Erfahrung in der ästhetischen Kosmetologie biete ich Ihnen individuelle Behandlungen auf höchstem Niveau. Mein Ziel ist es, Ihre natürliche Schönheit zu betonen und Ihr Wohlbefinden zu steigern — ohne sichtbare Eingriffe."}
+                </p>
+                <p className="mt-4 text-base leading-relaxed text-white/75">
+                  {"Jede Behandlung beginnt mit einer ausführlichen Beratung. Gemeinsam finden wir die optimale Lösung für Ihre individuellen Bedürfnisse."}
+                </p>
+              </ScrollReveal>
+
+              <ScrollReveal delay={400}>
+                <div className="mt-8 space-y-4">
+                  {[
+                    "Zertifizierte Fachkosmetikerin",
+                    "Spezialisierung auf Injektionskosmetik",
+                    "Fortbildungen in apparativen Verfahren",
+                    "Regelmäßige Schulungen & Zertifizierungen",
+                  ].map((item) => (
+                    <div key={item} className="flex items-center gap-3">
+                      <div className="flex size-6 flex-shrink-0 items-center justify-center rounded-full bg-teal-light/20">
+                        <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} className="text-teal-light">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg>
+                      </div>
+                      <span className="text-sm text-white/80">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </ScrollReveal>
+
+              <ScrollReveal delay={600}>
+                <a
+                  href="#contact"
+                  className="mt-10 inline-flex items-center justify-center rounded-full bg-accent px-8 py-4 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:bg-accent-dark hover:shadow-xl"
+                >
+                  {"Beratungsgespräch vereinbaren"}
+                </a>
+              </ScrollReveal>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ===== Leistungen ===== */}
       <section id="services" className="bg-gray-50 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -167,80 +242,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== Über uns ===== */}
-      <section id="about" className="relative overflow-hidden bg-[#3a5c60] py-24 sm:py-32">
-        <div className="pointer-events-none absolute -top-40 -right-40 size-[500px] rounded-full bg-teal/20 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-40 -left-40 size-[400px] rounded-full bg-teal-light/10 blur-3xl" />
-
-        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="flex flex-col items-center gap-16 lg:flex-row lg:gap-20">
-            {/* Фото */}
-            <ScrollReveal className="w-full flex-shrink-0 lg:w-[45%]">
-              <div className="relative">
-                <div className="absolute -top-4 -left-4 h-full w-full rounded-2xl border-2 border-teal-light/20" />
-                <Image
-                  src="https://images.unsplash.com/photo-1559599101-f09722fb4948?w=700&h=850&fit=crop&crop=top"
-                  alt="Olga Baher — Fachkosmetikerin"
-                  width={700}
-                  height={850}
-                  className="relative z-10 w-full rounded-2xl object-cover shadow-2xl"
-                />
-              </div>
-            </ScrollReveal>
-
-            {/* Текст */}
-            <div className="flex-1">
-              <ScrollReveal>
-                <span className="text-sm font-medium tracking-wide text-teal-light/80">Ihre Expertin</span>
-                <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                  Olga Baher
-                </h2>
-                <p className="mt-2 text-lg font-medium text-teal-light">
-                  {"Fachkosmetikerin für ästhetische Verfahren"}
-                </p>
-              </ScrollReveal>
-
-              <ScrollReveal delay={200}>
-                <p className="mt-6 text-base leading-relaxed text-white/75">
-                  {"Mit über 12 Jahren Erfahrung in der ästhetischen Kosmetologie biete ich Ihnen individuelle Behandlungen auf höchstem Niveau. Mein Ziel ist es, Ihre natürliche Schönheit zu betonen und Ihr Wohlbefinden zu steigern — ohne sichtbare Eingriffe."}
-                </p>
-                <p className="mt-4 text-base leading-relaxed text-white/75">
-                  {"Jede Behandlung beginnt mit einer ausführlichen Beratung. Gemeinsam finden wir die optimale Lösung für Ihre individuellen Bedürfnisse."}
-                </p>
-              </ScrollReveal>
-
-              <ScrollReveal delay={400}>
-                <div className="mt-8 space-y-4">
-                  {[
-                    "Zertifizierte Fachkosmetikerin",
-                    "Spezialisierung auf Injektionskosmetik",
-                    "Fortbildungen in apparativen Verfahren",
-                    "Regelmäßige Schulungen & Zertifizierungen",
-                  ].map((item) => (
-                    <div key={item} className="flex items-center gap-3">
-                      <div className="flex size-6 flex-shrink-0 items-center justify-center rounded-full bg-teal-light/20">
-                        <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} className="text-teal-light">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                        </svg>
-                      </div>
-                      <span className="text-sm text-white/80">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </ScrollReveal>
-
-              <ScrollReveal delay={600}>
-                <a
-                  href="#contact"
-                  className="mt-10 inline-flex items-center justify-center rounded-full bg-accent px-8 py-4 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:bg-accent-dark hover:shadow-xl"
-                >
-                  {"Beratungsgespräch vereinbaren"}
-                </a>
-              </ScrollReveal>
-            </div>
-          </div>
-        </div>
-      </section>
       {/* ===== Vorher / Nachher ===== */}
       <section id="results" className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
